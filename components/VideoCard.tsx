@@ -79,7 +79,7 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
             loop
             //this ref is like docuement.getElementByID in html but react version
             ref={videoRef}
-            className="lg:w[600px] h-[300px] md:h-[400px] lg:h-[530px] w-[200px] rounded-2xl cursor-pointer bg-gray-100"   
+            className="lg:w-[600px] h-[300px] md:h-[400px] lg:h-[530px] w-[200px] rounded-2xl cursor-pointer bg-gray-100"   
             src={post.video.asset.url}
             >
             </video>
