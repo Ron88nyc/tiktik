@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Video } from '../types';
 import VideoCard from '../components/VideoCard';
 import NoResults from '../components/NoResults';
+import { BASE_URL } from '../utils'
 //wheneve you're recieving props in your Next.js page you need an interface//
 interface IProps { 
   videos: Video[]
@@ -29,7 +30,7 @@ const Home = ({ videos }: IProps) => {
 // (such as authorization headers or geo location)
 
 export const getServerSideProps = async () => {
-  const { data } = await axios.get(`http://localhost:3000/api/post`);  //making get request to our own back end;
+  const { data } = await axios.get(`${BASE_URL}/api/post`);  //making get request to our own back end;
   
 
   return {
