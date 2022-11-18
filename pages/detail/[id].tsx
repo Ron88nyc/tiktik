@@ -69,12 +69,12 @@ const Detail = ({ postDetails }: IProps) => {
       {isVideoMuted ? (
                 <button onClick = { () => setIsVideoMuted(false) }>
                   <HiVolumeOff
-                  className="text-black text-2xl lg:text-4xl"/>
+                  className="text-white text-2xl lg:text-4xl"/>
                 </button>
               ) : (
                 <button onClick = { () => setIsVideoMuted(true) }>
                   <HiVolumeUp 
-                  className="text-black text-2xl lg:text-4xl"/>
+                  className="text-white text-2xl lg:text-4xl"/>
                 </button>
               )}
       </div>
