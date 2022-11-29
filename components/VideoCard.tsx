@@ -12,7 +12,7 @@ import { Video } from '../types';
 
 interface IProps {
   post: Video;
-  // isShowingOnHome?: boolean;
+  isShowingOnHome?: boolean;
 }
 
 const VideoCard: NextPage<IProps> = ({ post }) => {
