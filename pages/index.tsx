@@ -29,13 +29,25 @@ const Home = ({ videos }: IProps) => {
 // only use if you need to render a page whose data must be fetched at reuqest time, this could be due to the nature of the data or properties of the request
 // (such as authorization headers or geo location)
 
-export const getServerSideProps = async () => {
-  const { data } = await axios.get(`${BASE_URL}/api/post`);  //making get request to our own back end;
+export const getServerSideProps = async ({
+  query: { topic }
+}: {
+  query: {topic: string}
+}) => {
+  let response = null ;
+  if(topic) {
+    
+    response = await axios.get(`${BASE_URL}/api/discover/${topic}`);  //making get request to our own back end;
+
+  } else {
+    response = await axios.get(`${BASE_URL}/api/post`);  //making get request to our own back end;
+
+  }
   
 
   return {
     props: {
-      videos: data
+      videos: response.data
     }
   }
 }
