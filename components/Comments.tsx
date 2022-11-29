@@ -47,11 +47,12 @@ const Comments = ({ comment, setComment, addComment, comments, isPostingComment 
                               layout='responsive'
                             />
                           </div>
-
+                            <div className="hidden xl:block">
                           <p className='flex cursor-pointer gap-1 items-center text-[18px] font-bold leading-6 text-primary'>
                             {user.userName}{' '}
                             <GoVerified className='text-blue-400' />
                           </p>
+                        </div>
                         </div>
                       </Link>
                       <div>
@@ -86,3 +87,28 @@ const Comments = ({ comment, setComment, addComment, comments, isPostingComment 
 };
 
 export default Comments;
+
+
+
+
+
+//re-useable code. Could refractor it
+{/* <Link href={`/profile/${user._id}`}>
+                        <div className='flex items-start gap-3'>
+                          <div className='w-12 h-12'>
+                            <Image
+                              width={48}
+                              height={48}
+                              className='rounded-full cursor-pointer'
+                              src={user.image}
+                              alt='user-profile'
+                              layout='responsive'
+                            />
+                          </div>
+                        
+                          <p className='flex cursor-pointer gap-1 items-center text-[18px] font-bold leading-6 text-primary'>
+                            {user.userName}{' '}
+                            <GoVerified className='text-blue-400' />
+                          </p>
+                        </div>
+                      </Link> */}
