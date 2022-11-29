@@ -120,6 +120,8 @@ export default Navbar
 
 
 
+
+
 // import React, { useEffect, useState } from 'react';
 // import Image from 'next/image';
 // import Link from 'next/link';
@@ -140,9 +142,9 @@ export default Navbar
 //   const router = useRouter();
 //   const { userProfile, addUser, removeUser } = useAuthStore();
   
-//   // useEffect(() => {
-//   //   setUser(userProfile);
-//   // }, [userProfile]);
+//   useEffect(() => {
+//     setUser(userProfile);
+//   }, [userProfile]);
 
 //   const handleSearch = (e: { preventDefault: () => void }) => {
 //     e.preventDefault();
@@ -219,7 +221,7 @@ export default Navbar
 //           </div>
 //         ) : (
 //             <GoogleLogin
-//               onSuccess={(response) => createOrGetUser(response)}
+//               onSuccess={(response) => createOrGetUser(response, addUser)}
 //               onError={() => console.log('Login Failed')}
 //             />
 //         )}
