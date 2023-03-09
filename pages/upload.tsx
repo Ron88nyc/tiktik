@@ -201,7 +201,7 @@ const Upload = () => {
               {savingPost ? 'Posting...' : 'Post'}
             </button>
                {/* <button 
-                                                 onClick={(handlePost) => {}}
+                                                  onClick={(handlePost) => {}}
                                                  type="button"
                                                  className="bg-[#F51997] text-white text-md font-medium p-2 rounded w-28 lg:w-44 outline-none"
                                              >
