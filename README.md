@@ -1,4 +1,4 @@
-Tools used:Typscript, GoogleOAuth, MongoDB, Express, TailwindCss, Next.Js, Node, Nextjs, Zustand and Sanity.
+Tools used:Typescript, GoogleOAuth, MongoDB, Express, TailwindCSS, Next.Js, Node, Zustand and Sanity.
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
